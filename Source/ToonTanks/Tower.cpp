@@ -6,6 +6,14 @@
 #include "Kismet/GameplayStatics.h"
 #include "TimerManager.h"
 
+
+void ATower::HandleDestruction()
+{
+  Super::HandleDestruction();
+  Destroy();
+}
+
+
 // Called when the game starts or when spawned
 void ATower::BeginPlay()
 {
